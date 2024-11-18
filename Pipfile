@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 django-debug-toolbar = "*"
+eralchemy = "*"
+graphviz = "*"
 
 [dev-packages]
 
