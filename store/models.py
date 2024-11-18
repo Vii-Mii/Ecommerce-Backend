@@ -16,11 +16,11 @@ class Product(models.Model):
     description = models.TextField()
     unit_price = models.DecimalField(max_digits=6,decimal_places=2)
     inventory = models.IntegerField()
-    last_updated = models.DateTimeField(auto_now=True)
+    last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(Collection,on_delete=models.PROTECT)
     promotions = models.ManyToManyField(Promotion)
     
-class Customer(models.Model):
+class   Customer(models.Model):
     MEMBERSHIP_BRONZE = 'B'
     MEMBERSHIP_SILVER = 'S'
     MEMBERSHIP_GOLD = 'G'
