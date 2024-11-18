@@ -81,12 +81,15 @@ WSGI_APPLICATION = "storefront.wsgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'storefront',            # Database name
+        'USER': 'my_django_user',          # Database user
+        'PASSWORD': 'my_secure_password',  # User password
+        'HOST': 'localhost',               # Use '127.0.0.1' for localhost
+        'PORT': '5432',                    # Default PostgreSQL port
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

@@ -8,6 +8,7 @@ django = "*"
 django-debug-toolbar = "*"
 eralchemy = "*"
 graphviz = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
